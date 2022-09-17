@@ -1,0 +1,53 @@
+#######################################
+# Syntax Coloring Map For CoolCarLib
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CoolCar	KEYWORD1
+CoolCarBasic	KEYWORD1
+
+# ENUM TYPES
+cc_ac_level	KEYWORD1
+
+# STRUCT TYPES
+xyzFloat	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getMaxPassengers	KEYWORD2
+getSpeed	KEYWORD2
+setSpeed	KEYWORD2
+hoot	KEYWORD2
+maxPassengers	KEYWORD2
+speed	KEYWORD2
+init	KEYWORD2
+getBrand	KEYWORD2
+getMaxSpeed	KEYWORD2
+getLengthInMeters	KEYWORD2
+accelerate	KEYWORD2
+brake	KEYWORD2
+getCurrentSpeed	KEYWORD2
+setAirConLevel	KEYWORD2
+getAirConLevel	KEYWORD2
+brand	KEYWORD2
+maxSpeed	KEYWORD2
+length	KEYWORD2
+currentSpeed	KEYWORD2
+calculateNewSpeed	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+# ENUM VALUES
+CC_AC_OFF	LITERAL1
+CC_AC_LOW	LITERAL1
+CC_AC_MEDIUM	LITERAL1
+CC_AC_HIGH	LITERAL1
+CC_AC_MAX	LITERAL1
