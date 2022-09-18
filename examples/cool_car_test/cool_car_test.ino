@@ -1,8 +1,8 @@
 #include <CoolCarLib.h>
 
 char producer[] = {"Audi"};
-CoolCar myCar(producer,5,180,3.5); 
-// Alternative: CoolCar myCar(producer,5,180); 
+CoolCar myCar(producer, sizeof(producer), 5, 180, 3.5); 
+// Alternative: CoolCar myCar(producer, sizeof(producer), 5, 180); 
 
 void setup() {
   Serial.begin(9600);
