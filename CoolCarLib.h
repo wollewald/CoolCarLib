@@ -29,7 +29,7 @@ enum cc_ac_level{
 class CoolCar
 {
     public: 
-        CoolCar(char *br, uint8_t mP, uint16_t mSp, float len = 4.2);
+        CoolCar(char *br, size_t brSize,  uint8_t mP, uint16_t mSp, float len = 4.2);
         
         void init();
         char* getBrand();
@@ -44,12 +44,12 @@ class CoolCar
         cc_ac_level getAirConLevel();
             
     private:
-        char* brand;
         uint8_t maxPassengers;
         uint16_t maxSpeed;
         float length; 
         int16_t currentSpeed;
         cc_ac_level airConLevel;
+        char brand[];
 
         int16_t calculateNewSpeed(int16_t value);
 };

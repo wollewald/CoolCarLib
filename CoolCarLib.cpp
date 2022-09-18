@@ -31,8 +31,10 @@ void CoolCarBasic::hoot(){
 
 /************  Constructor ************/
 
-CoolCar::CoolCar(char* br, uint8_t mP, uint16_t mSp, float len){
-    brand = br;
+CoolCar::CoolCar(char* br, size_t brSize, uint8_t mP, uint16_t mSp, float len){
+    for(uint8_t i=0; i<brSize; i++){
+        brand[i] = br[i];
+    }
     maxPassengers = mP;
     maxSpeed = mSp;
     length = len;
