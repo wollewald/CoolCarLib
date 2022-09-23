@@ -12,10 +12,6 @@ CoolCarBasic	KEYWORD1
 # ENUM TYPES
 cc_ac_level	KEYWORD1
 
-# STRUCT TYPES
-xyzFloat	KEYWORD1
-
-
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
