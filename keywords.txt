@@ -23,7 +23,6 @@ hoot	KEYWORD2
 maxPassengers	KEYWORD2
 speed	KEYWORD2
 init	KEYWORD2
-getBrand	KEYWORD2
 getMaxSpeed	KEYWORD2
 getLengthInMeters	KEYWORD2
 accelerate	KEYWORD2
@@ -31,7 +30,6 @@ brake	KEYWORD2
 getCurrentSpeed	KEYWORD2
 setAirConLevel	KEYWORD2
 getAirConLevel	KEYWORD2
-brand	KEYWORD2
 maxSpeed	KEYWORD2
 length	KEYWORD2
 currentSpeed	KEYWORD2
