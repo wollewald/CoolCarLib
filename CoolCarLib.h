@@ -8,11 +8,11 @@
 class CoolCarBasic  // Class Declaration
 {
     public: 
-        CoolCarBasic(uint8_t);  // Constructor
+        CoolCarBasic(uint8_t mP);  // Constructor
     
         uint8_t getMaxPassengers();
         uint16_t getSpeed();
-        void setSpeed(uint16_t);
+        void setSpeed(uint16_t speed);
         void hoot();
                  
     private:
@@ -24,15 +24,14 @@ class CoolCarBasic  // Class Declaration
 
 enum cc_ac_level{   
     CC_AC_OFF, CC_AC_LOW, CC_AC_MEDIUM, CC_AC_HIGH, CC_AC_MAX
-}; 
+};
 
 class CoolCar
 {
     public: 
-        CoolCar(char *br, size_t brSize,  uint8_t mP, uint16_t mSp, float len = 4.2);
+        CoolCar(const uint8_t mP, const uint16_t mSp, const float len = 4.2);
         
         void init();
-        char* getBrand();
         uint8_t getMaxPassengers();
         uint16_t getMaxSpeed();
         float getLengthInMeters();
@@ -49,8 +48,7 @@ class CoolCar
         float length; 
         int16_t currentSpeed;
         cc_ac_level airConLevel;
-        char brand[];
-
+        
         int16_t calculateNewSpeed(int16_t value);
 };
 

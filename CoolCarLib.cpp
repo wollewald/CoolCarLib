@@ -31,24 +31,18 @@ void CoolCarBasic::hoot(){
 
 /************  Constructor ************/
 
-CoolCar::CoolCar(char* br, size_t brSize, uint8_t mP, uint16_t mSp, float len){
-    for(uint8_t i=0; i<brSize; i++){
-        brand[i] = br[i];
-    }
-    maxPassengers = mP;
-    maxSpeed = mSp;
-    length = len;
-}
+CoolCar::CoolCar(const uint8_t mP, const uint16_t mSp, const float len)
+    : maxPassengers{mP}
+    , maxSpeed{mSp}
+    , length{len}
+    {}
+
 
 /**********  Public Functions **********/
 
 void CoolCar::init(){    
     currentSpeed = 0;
     airConLevel = CC_AC_OFF;
-}
-
-char* CoolCar::getBrand(){
-    return brand;
 }
 
 uint8_t CoolCar::getMaxPassengers(){    
@@ -73,7 +67,7 @@ void CoolCar::hoot(){
 
 bool CoolCar::accelerate(uint16_t accVal){
     bool noLimitViolation = true;
-    uint16_t newSpeed = (uint16_t)calculateNewSpeed(accVal);
+    uint16_t newSpeed = static_cast<uint16_t>(calculateNewSpeed(accVal));
     if(newSpeed > maxSpeed){
         currentSpeed = maxSpeed;
         noLimitViolation = false;
