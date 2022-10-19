@@ -1,13 +1,11 @@
 #include <CoolCarLib.h>
 
-char producer[] = {"Audi"};
-CoolCar myCar = CoolCar(producer, sizeof(producer), 5, 180, 3.5); 
-// Alternative: CoolCar myCar(producer, sizeof(producer), 5, 180); 
+CoolCar myCar = CoolCar(5, 180, 3.5); 
+// Alternative: CoolCar myCar(5, 180); 
 
 void setup() {
   Serial.begin(9600);
   myCar.init();
-  Serial.println(myCar.getBrand()); 
   Serial.print("Max. number of passengers: ");
   Serial.println(myCar.getMaxPassengers());
   Serial.print("Max. Speed [km/h]: ");
@@ -31,7 +29,7 @@ void setup() {
   Serial.println(myCar.getCurrentSpeed());
 
   Serial.print("Air Conditioning Level: ");
-  Serial.println(myCar.getAirConLevel());
+  //Serial.println(myCar.getAirConLevel());
 
   myCar.brake(60);
   Serial.print("New Speed [km/h]: ");
