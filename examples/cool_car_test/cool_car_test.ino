@@ -29,7 +29,7 @@ void setup() {
   Serial.println(myCar.getCurrentSpeed());
 
   Serial.print("Air Conditioning Level: ");
-  //Serial.println(myCar.getAirConLevel());
+  Serial.println(myCar.getAirConLevel());
 
   myCar.brake(60);
   Serial.print("New Speed [km/h]: ");
