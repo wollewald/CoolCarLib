@@ -15,7 +15,7 @@ class CoolCarBasic  // Class Declaration
         void setSpeed(uint16_t speed);
         void hoot();
                  
-    private:
+    protected:
         uint8_t maxPassengers;
         uint16_t speed;
 };
@@ -42,7 +42,7 @@ class CoolCar
         void setAirConLevel(cc_ac_level acLevel);
         cc_ac_level getAirConLevel();
             
-    private:
+    protected:
         uint8_t maxPassengers;
         uint16_t maxSpeed;
         float length; 
