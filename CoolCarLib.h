@@ -29,7 +29,8 @@ enum cc_ac_level{
 class CoolCar
 {
     public: 
-        CoolCar(const uint8_t mP, const uint16_t mSp, const float len = 4.2);
+        CoolCar(const uint8_t mP, const uint16_t mSp, const float len = 4.2)
+        : maxPassengers{mP}, maxSpeed{mSp}, length{len} { /*empty */ }
         
         void init();
         uint8_t getMaxPassengers();

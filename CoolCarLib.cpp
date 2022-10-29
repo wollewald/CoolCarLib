@@ -29,16 +29,6 @@ void CoolCarBasic::hoot(){
 
 /* #################  CoolCar ################ */
 
-/************  Constructor ************/
-
-CoolCar::CoolCar(const uint8_t mP, const uint16_t mSp, const float len)
-    : maxPassengers{mP}
-    , maxSpeed{mSp}
-    , length{len}
-{
-	//empty
-}
-
 /**********  Public Functions **********/
 
 void CoolCar::init(){    
