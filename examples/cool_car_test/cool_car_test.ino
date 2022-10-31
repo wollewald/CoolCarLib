@@ -5,6 +5,7 @@ CoolCar myCar = CoolCar(5, 180, 3.5);
 
 void setup() {
   Serial.begin(9600);
+  //delay(200); // uncomment for ESP32 / ESP8266
   myCar.init();
   Serial.print("Max. number of passengers: ");
   Serial.println(myCar.getMaxPassengers());
