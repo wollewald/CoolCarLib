@@ -4,7 +4,7 @@ CoolCarBasic myCar = CoolCarBasic(7); // 7 passengers is maximum
 
 void setup() {
   Serial.begin(9600);
-  //delay(200); uncomment for ESP32 / ESP8266
+  //delay(200); // uncomment for ESP32 / ESP8266
   
   byte passengerLimit = myCar.getMaxPassengers();
   unsigned int currentSpeed = myCar.getSpeed();
